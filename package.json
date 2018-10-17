@@ -1,0 +1,53 @@
+{
+  "name": "rewire-typescript-example-project",
+  "version": "1.0.0",
+  "description": "An example project for using rewire with jest in typescript",
+  "main": "none",
+  "scripts": {
+    "build": "tsc -p ./",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "node"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "__tests__/.*\\.test\\.(ts|tsx|js)$"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Fitz/Rewire-Jest-Typescript-example-project-aka-animated-octo-tribble-.git"
+  },
+  "keywords": [
+    "typescript",
+    "jest",
+    "rewire",
+    "demo",
+    "example"
+  ],
+  "author": "Thomas Léger",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/El-Fitz/Rewire-Jest-Typescript-example-project-aka-animated-octo-tribble-/issues"
+  },
+  "homepage": "https://weekly.elfitz.com/using-rewire-with-typescript-jest",
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "@types/rewire": "^2.5.28",
+    "jest": "^23.6.0",
+    "rewire": "^4.0.1",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.3"
+  }
+}
